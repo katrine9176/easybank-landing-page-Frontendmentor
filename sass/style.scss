@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'colors' as *;
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1.8rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
