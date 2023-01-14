@@ -3,3 +3,29 @@
 		max-width: 450px;
 	}
 }
+@media (min-width: 400px) {
+    .header {
+        &__mockup {
+            width: 370px;
+            height: 453px;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .header {
+        &__mockup {
+            width: 480px;
+            height: 600px;
+        }
+    }
+}
+
+@media (min-width: 580px) {
+    .header {
+        &__heading {
+            margin-top: -2em;
+        }
+    }
+}
+
