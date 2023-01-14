@@ -14,6 +14,69 @@ body {
   font-size: 1.8rem;
 }
 
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav {
+  padding: 1em;
+  height: 70px;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+  position: fixed;
+}
+.nav__burger, .nav__Xicon {
+  padding: 0.5em;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  border: none;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.nav__logo {
+  padding: 0.5em;
+}
+.nav__links {
+  position: absolute;
+  top: -350px;
+  height: 250px;
+  width: 90%;
+  padding: 1em;
+  text-align: center;
+  list-style: none;
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.nav__links li {
+  margin-top: 1em;
+}
+.nav__links-link {
+  position: relative;
+  text-decoration: none;
+  color: hsl(233deg, 26%, 24%);
+}
+.nav__links-link:hover:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: hsl(136deg, 65%, 51%);
+}
+.nav .hide {
+  display: none;
+}
+.nav .active {
+  display: block;
+}
+.nav .active-nav {
+  transform: translateY(400px);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
