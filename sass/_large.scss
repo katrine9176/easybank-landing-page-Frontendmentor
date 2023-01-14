@@ -1,0 +1,39 @@
+@media (min-width: 992px) {
+	.container {
+		max-width: 850px;
+	}
+
+	.nav {
+		&__links {
+			right: -110px;
+		}
+
+		&__invite {
+			right: 60px;	
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1000px;
+	}
+
+	.nav {
+		&__links {
+			right: -155px;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1200px;
+	}
+
+	.nav {
+		&__links {
+			right: -250px;
+		}
+	}
+}

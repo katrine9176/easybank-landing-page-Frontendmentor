@@ -9,7 +9,6 @@ body {
 .container {
 	position: relative;
 	margin: 0 auto;
-	max-width: 1200px;
 }
 
 .nav {
@@ -27,6 +26,25 @@ body {
 		right: 5px;
 		border: none;
 		background-color: $white;
+	}
+
+	&__invite {
+		display: none;
+		height: 40px;
+		width: 150px;
+		font-family: 'Public Sans', sans-serif;
+		font-size: 1.6rem;
+		background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
+		border: none;
+		border-radius: 15px;
+		color: $white;
+		font-weight: bold;
+		transition: all 0.3s;
+
+		&:hover {
+			opacity: 60%;
+			cursor: pointer;
+		}
 	}
 
 	&__logo {
@@ -54,7 +72,7 @@ body {
 			color: $dark-blue;
 
 			&:hover {
-				&:after {
+				&::after {
 					content: '';
 					position: absolute;
 					top: 25px;
@@ -71,18 +89,25 @@ body {
 	.hide {
 		display: none;
 	}
+
 	.active {
 		display: block;
 	}
+
 	.active-nav {
 		transform: translateY(400px);
 	}
 }
 
 .attribution {
-	font-size: 11px;
+	font-size: 1.1rem;
 	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
 }
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
+
+@import 'small';
+@import 'medium';
+@import 'large';
