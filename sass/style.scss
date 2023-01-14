@@ -11,12 +11,36 @@ body {
 	margin: 0 auto;
 }
 
+.invite {
+	height: 40px;
+	width: 150px;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1.6rem;
+	background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
+	border: none;
+	border-radius: 25px;
+	color: $white;
+	font-weight: bold;
+	transition: all 0.3s;
+
+	&:hover {
+		opacity: 60%;
+		cursor: pointer;
+	}
+}
+
+.paragraph {
+	color: $grayish-blue;
+	font-size: 1.6rem;
+}
+
 .nav {
 	padding: 1em;
 	height: 70px;
 	width: 100%;
 	background-color: $white;
 	position: fixed;
+	z-index: 10;
 
 	&__burger,
 	&__Xicon {
@@ -28,23 +52,9 @@ body {
 		background-color: $white;
 	}
 
+
 	&__invite {
 		display: none;
-		height: 40px;
-		width: 150px;
-		font-family: 'Public Sans', sans-serif;
-		font-size: 1.6rem;
-		background: linear-gradient(to right, $lime-green 0%, $bright-cyan 100%);
-		border: none;
-		border-radius: 15px;
-		color: $white;
-		font-weight: bold;
-		transition: all 0.3s;
-
-		&:hover {
-			opacity: 60%;
-			cursor: pointer;
-		}
 	}
 
 	&__logo {
@@ -96,6 +106,34 @@ body {
 
 	.active-nav {
 		transform: translateY(400px);
+	}
+}
+
+.header {
+	text-align: center;
+
+	&__bg {
+		width: 100%;
+	}
+
+	&__mockup {
+		margin: -30em auto 0 auto;
+		width: 100%;
+	}
+
+	&__heading {
+		margin: 0.5em auto;
+		font-weight: 300;
+		color: $dark-blue;
+	}
+
+	&__paragraph {
+		padding: 0 2em;
+		margin-bottom: 1em;
+	}
+
+	&__invite {
+		font-size: 1.4rem;
 	}
 }
 
