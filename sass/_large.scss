@@ -156,6 +156,12 @@
 			}
 		}
 	}
+
+	.footer {
+		&__links {
+			margin-left: 4em;
+		}
+	}
 }
 
 @media (min-width: 1400px) {
@@ -166,6 +172,10 @@
 	.nav {
 		&__links {
 			right: -250px;
+		}
+
+		&__invite {
+			right: 0;
 		}
 	}
 
@@ -193,6 +203,7 @@
 		.latest-articles {
 			&__cards {
 				margin-left: 0;
+				
 				&-card {
 					width: 280px;
 					margin: 0.5em;

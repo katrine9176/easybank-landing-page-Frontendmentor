@@ -210,12 +210,56 @@ body {
   color: hsl(136deg, 65%, 51%);
 }
 
-.attribution {
+.footer {
+  padding: 2em;
+  text-align: center;
+  background-color: hsl(233deg, 26%, 24%);
+}
+.footer .share {
+  display: flex;
+  flex-direction: column;
+}
+.footer__socials {
+  margin: 1em;
+}
+.footer__socials-social {
+  margin: 0.5em;
+  background-color: hsl(233deg, 26%, 24%);
+  transition: all 0.3s;
+}
+.footer__socials-social:hover {
+  box-shadow: 0 0 15px hsl(136deg, 65%, 51%);
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+.footer__links-link {
+  margin: 0.3em;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+.footer__links-link:hover {
+  color: hsl(136deg, 65%, 51%);
+}
+.footer__invite {
+  font-size: 1.4rem;
+}
+.footer__paragraph {
+  margin: 2em 0;
+}
+.footer .attribution p {
   font-size: 1.1rem;
   text-align: center;
+  color: hsl(233deg, 8%, 62%);
 }
-.attribution a {
+.footer .attribution p a {
   color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -298,6 +342,32 @@ body {
   }
   .main .latest-articles .section__heading {
     margin-bottom: 2em;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__logo {
+    margin-bottom: 1em;
+    width: 139px;
+    height: 20px;
+  }
+  .footer__links {
+    text-align: left;
+    flex-direction: row;
+  }
+  .footer__links .share {
+    margin: 0 2em;
+  }
+  .footer .one {
+    margin-top: 40px;
+  }
+  .footer .four {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
 @media (min-width: 992px) {
@@ -412,6 +482,9 @@ body {
   .main .latest-articles__cards-card .paragraph {
     width: 236px;
   }
+  .footer__links {
+    margin-left: 4em;
+  }
 }
 @media (min-width: 1400px) {
   .container {
@@ -419,6 +492,9 @@ body {
   }
   .nav__links {
     right: -250px;
+  }
+  .nav__invite {
+    right: 0;
   }
   .header .text {
     margin-left: 5em;

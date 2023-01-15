@@ -238,12 +238,68 @@ body {
 	}
 }
 
-.attribution {
-	font-size: 1.1rem;
+.footer {
+	padding: 2em;
 	text-align: center;
+	background-color: $dark-blue;
 
-	a {
-		color: hsl(228, 45%, 44%);
+	.share {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__socials {
+		margin: 1em;
+
+		&-social {
+			margin: 0.5em;
+			background-color: $dark-blue;
+			transition: all .3s;
+
+			&:hover {
+				box-shadow: 0 0 15px $lime-green;
+			}
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		margin: 2em;
+
+		&-link {
+			margin: 0.3em;
+			color: $white;
+			font-weight: 300;
+			text-decoration: none;
+			font-size: 1.6rem;
+			transition: color .3s;
+
+			&:hover {
+				color: $lime-green;
+			}
+		}
+	}
+
+	&__invite {
+		font-size: 1.4rem;
+	}
+
+	&__paragraph {
+		margin: 2em 0;
+	}
+
+	.attribution {
+		p {
+			font-size: 1.1rem;
+			text-align: center;
+			color: $grayish-blue;
+
+			a {
+				color: hsl(228, 45%, 44%);
+				text-decoration: none;
+			}
+		}
 	}
 }
 
