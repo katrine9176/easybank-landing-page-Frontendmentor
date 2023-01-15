@@ -14,7 +14,7 @@
 	}
 
 	.header {
-		background-color: $light-grayish-blue;
+		background-color: $very-light-gray;
 		height: 730px;
 
 		&__bg {
@@ -38,6 +38,7 @@
 
 		&__heading {
 			margin-top: 0;
+			margin-left: 10px;
 		}
 
 		.text {
@@ -46,6 +47,29 @@
 			top: 250px;
 			left: -5em;
 			z-index: 6;
+		}
+	}
+
+	.main {
+		.section {
+			text-align: left;
+
+			&__heading {
+				margin-left: 15px;
+			}
+		}
+
+		.why-choose-us {
+			&__cards {
+				width: 100%;
+				margin-left: -95px;
+				justify-content: center;
+
+				&-card {
+					margin-right: 10px;
+					width: 300px;
+				}
+			}
 		}
 	}
 }
@@ -63,10 +87,13 @@
 	.header {
 		&__heading {
 			font-size: 5rem;
+			margin-left: 0;
 		}
+
 		&__paragraph {
 			font-size: 1.8rem;
 		}
+
 		.text {
 			margin-left: 2em;
 			text-align: left;
@@ -76,9 +103,29 @@
 				padding: 0;
 			}
 		}
+
 		&__invite {
 			margin-top: 1.5em;
 			font-size: 1.6rem;
+		}
+	}
+
+	.main {
+		.section {
+			&__heading {
+				margin-top: 2em;
+				font-size: 3.5rem;
+			}
+		}
+
+		.why-choose-us {
+			&__cards {
+				margin-left: -20px;
+
+				&-card {
+					margin: auto;
+				}
+			}
 		}
 	}
 }
@@ -98,6 +145,21 @@
 		.text {
 			margin-left: 5em;
 			width: 600px;
+		}
+	}
+
+	.main {
+		.section {
+			&__paragraph {
+				margin-left: 0;
+				width: 600px;
+			}
+		}
+		
+		.why-choose-us {
+			&__cards {
+				margin-left: 0;
+			}
 		}
 	}
 }

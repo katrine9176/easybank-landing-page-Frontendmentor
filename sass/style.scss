@@ -4,8 +4,8 @@
 body {
 	font-family: 'Public Sans', sans-serif;
 	font-size: 1.8rem;
-	overflow: hidden;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 
 .paragraph {
 	color: $grayish-blue;
-	font-size: 1.6rem;
+	font-size: 1.55rem;
 }
 
 .nav {
@@ -111,9 +111,10 @@ body {
 }
 
 .header {
+	overflow: hidden;
 	position: relative;
 	text-align: center;
-	background-color: $light-grayish-blue;
+	background-color: $very-light-gray;
 
 	&__bg {
 		width: 100%;
@@ -140,7 +141,7 @@ body {
 	}
 
 	&__heading {
-		margin: 0.5em auto;
+		margin: 0.7em auto;
 		font-weight: 300;
 		color: $dark-blue;
 	}
@@ -153,6 +154,40 @@ body {
 	&__invite {
 		font-size: 1.4rem;
 		margin-bottom: 2em;
+	}
+}
+
+.main {
+	.section {
+		text-align: center;
+		padding: 3em 0.7em;
+
+		&__heading {
+			margin-bottom: 0.5em;
+			font-weight: 300;
+			color: $dark-blue;
+		}
+	}
+
+	.why-choose-us {
+		background-color: $light-grayish-blue;
+
+		&__cards {
+			margin: 2em;
+			display: flex;
+			flex-wrap: wrap;
+
+			&-card {
+				margin: 1em 0;
+
+				&-heading {
+					margin-top: 1em;
+					margin-bottom: 0.7em;
+					font-weight: 300;
+					color: $dark-blue;
+				}
+			}
+		}
 	}
 }
 

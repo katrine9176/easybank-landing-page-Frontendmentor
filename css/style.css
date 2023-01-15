@@ -12,8 +12,8 @@ html {
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 1.8rem;
-  overflow: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
 
 .paragraph {
   color: hsl(233deg, 8%, 62%);
-  font-size: 1.6rem;
+  font-size: 1.55rem;
 }
 
 .nav {
@@ -105,9 +105,10 @@ body {
 }
 
 .header {
+  overflow: hidden;
   position: relative;
   text-align: center;
-  background-color: hsl(220deg, 16%, 96%);
+  background-color: hsl(0deg, 0%, 98%);
 }
 .header__bg {
   width: 100%;
@@ -131,7 +132,7 @@ body {
   z-index: 5;
 }
 .header__heading {
-  margin: 0.5em auto;
+  margin: 0.7em auto;
   font-weight: 300;
   color: hsl(233deg, 26%, 24%);
 }
@@ -142,6 +143,33 @@ body {
 .header__invite {
   font-size: 1.4rem;
   margin-bottom: 2em;
+}
+
+.main .section {
+  text-align: center;
+  padding: 3em 0.7em;
+}
+.main .section__heading {
+  margin-bottom: 0.5em;
+  font-weight: 300;
+  color: hsl(233deg, 26%, 24%);
+}
+.main .why-choose-us {
+  background-color: hsl(220deg, 16%, 96%);
+}
+.main .why-choose-us__cards {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .why-choose-us__cards-card {
+  margin: 1em 0;
+}
+.main .why-choose-us__cards-card-heading {
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  font-weight: 300;
+  color: hsl(233deg, 26%, 24%);
 }
 
 .attribution {
@@ -178,6 +206,18 @@ body {
   .header__bg {
     height: 720px;
   }
+  .main .section__heading {
+    font-size: 3rem;
+  }
+  .main .section__paragraph {
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .main .why-choose-us__cards-card {
+    margin: 0 auto;
+    padding: 1em;
+    width: 500px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -203,7 +243,7 @@ body {
   .nav__links {
     display: flex;
     height: 42px;
-    top: -34px;
+    top: -33px;
     right: -75px;
     background-color: none;
   }
@@ -227,7 +267,7 @@ body {
     right: 60px;
   }
   .header {
-    background-color: hsl(220deg, 16%, 96%);
+    background-color: hsl(0deg, 0%, 98%);
     height: 730px;
   }
   .header__bg--mobile {
@@ -246,6 +286,7 @@ body {
   }
   .header__heading {
     margin-top: 0;
+    margin-left: 10px;
   }
   .header .text {
     position: absolute;
@@ -253,6 +294,21 @@ body {
     top: 250px;
     left: -5em;
     z-index: 6;
+  }
+  .main .section {
+    text-align: left;
+  }
+  .main .section__heading {
+    margin-left: 15px;
+  }
+  .main .why-choose-us__cards {
+    width: 100%;
+    margin-left: -95px;
+    justify-content: center;
+  }
+  .main .why-choose-us__cards-card {
+    margin-right: 10px;
+    width: 300px;
   }
 }
 @media (min-width: 1200px) {
@@ -264,6 +320,7 @@ body {
   }
   .header__heading {
     font-size: 5rem;
+    margin-left: 0;
   }
   .header__paragraph {
     font-size: 1.8rem;
@@ -280,6 +337,16 @@ body {
     margin-top: 1.5em;
     font-size: 1.6rem;
   }
+  .main .section__heading {
+    margin-top: 2em;
+    font-size: 3.5rem;
+  }
+  .main .why-choose-us__cards {
+    margin-left: -20px;
+  }
+  .main .why-choose-us__cards-card {
+    margin: auto;
+  }
 }
 @media (min-width: 1400px) {
   .container {
@@ -291,5 +358,12 @@ body {
   .header .text {
     margin-left: 5em;
     width: 600px;
+  }
+  .main .section__paragraph {
+    margin-left: 0;
+    width: 600px;
+  }
+  .main .why-choose-us__cards {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

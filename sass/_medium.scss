@@ -4,6 +4,27 @@
 			height: 720px;
 		}
 	}
+
+	.main {
+		.section {
+			&__heading {
+				font-size: 3rem;
+			}
+			&__paragraph {
+				margin: 0 auto;
+				// width: 500px;
+				padding: 1em;
+			}
+		}
+		
+		.why-choose-us {
+			&__cards-card {
+				margin: 0 auto;
+				padding: 1em;
+				width: 500px;
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -36,7 +57,7 @@
 		&__links {
 			display: flex;
 			height: 42px;
-			top: -34px;
+			top: -33px;
 			right: -75px;
 			background-color: none;
 
