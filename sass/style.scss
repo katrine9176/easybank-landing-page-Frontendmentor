@@ -63,6 +63,7 @@ body {
 	}
 
 	&__links {
+		margin-top: 1em;
 		position: absolute;
 		top: -350px;
 		height: 250px;
@@ -70,7 +71,7 @@ body {
 		padding: 1em;
 		text-align: center;
 		list-style: none;
-		border-radius: 15px;
+		border-radius: 7px;
 		background-color: $white;
 
 		li {
