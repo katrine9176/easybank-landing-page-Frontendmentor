@@ -153,7 +153,7 @@ body {
 
 	&__invite {
 		font-size: 1.4rem;
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 	}
 }
 
@@ -163,6 +163,7 @@ body {
 		padding: 3em 0.7em;
 
 		&__heading {
+			margin-top: 1em;
 			margin-bottom: 0.5em;
 			font-weight: 300;
 			color: $dark-blue;
@@ -185,6 +186,52 @@ body {
 					margin-bottom: 0.7em;
 					font-weight: 300;
 					color: $dark-blue;
+				}
+			}
+		}
+	}
+
+	.latest-articles {
+		background-color: $very-light-gray;
+
+		&__cards {
+			margin: 0 auto;
+			margin-top: 2em;
+			display: flex;
+			flex-wrap: wrap;
+
+			&-card {
+				margin: 0 auto;
+				margin-bottom: 2em;
+				width: 290px;
+				text-align: left;
+				background-color: $white;
+
+				.text {
+					padding: 1.5em;
+				}
+
+				&-img {
+					width: 290px;
+
+					&--first {
+						height: 193px;
+					}
+				}
+
+				&-author {
+					font-size: 1.3rem;
+				}
+
+				&-heading {
+					margin: 0.5em 0;
+					font-weight: 300;
+					cursor: pointer;
+					transition: all 0.3s;
+
+					&:hover {
+						color: $lime-green;
+					}
 				}
 			}
 		}

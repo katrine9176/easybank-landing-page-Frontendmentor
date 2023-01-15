@@ -10,9 +10,9 @@
 			&__heading {
 				font-size: 3rem;
 			}
+
 			&__paragraph {
 				margin: 0 auto;
-				// width: 500px;
 				padding: 1em;
 			}
 		}
@@ -22,6 +22,12 @@
 				margin: 0 auto;
 				padding: 1em;
 				width: 500px;
+			}
+		}
+
+		.latest-articles {
+			.paragraph {
+				padding: 0;
 			}
 		}
 	}
@@ -71,6 +77,14 @@
 						top: 40px;
 					}
 				}
+			}
+		}
+	}
+
+	.main {
+		.latest-articles {
+			.section__heading {
+				margin-bottom: 2em;
 			}
 		}
 	}
