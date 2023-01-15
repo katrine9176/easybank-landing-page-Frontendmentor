@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/katrine9176/easybank-landing-page-Frontendmentor)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://katrine9176.github.io/easybank-landing-page-Frontendmentor/)
 
 ## My process
 
